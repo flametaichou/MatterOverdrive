@@ -92,8 +92,11 @@ public class MOWorldGen implements IWorldGenerator, IConfigSubscriber
             case 0:
                 generateOverworld(world, random, chunkX * 16, chunkZ * 16);
                 break;
-            case 2:
+            case 1:
                 generateEnd(world, random, chunkX * 16, chunkZ * 16);
+                break;
+            case 2:
+                generateOverworld(world, random, chunkX * 16, chunkZ * 16);
                 break;
             default:
                 generateOther(world,random,chunkX * 16,chunkZ * 16);

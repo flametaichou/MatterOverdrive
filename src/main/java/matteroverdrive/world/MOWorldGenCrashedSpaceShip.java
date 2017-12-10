@@ -119,7 +119,7 @@ public class MOWorldGenCrashedSpaceShip extends MOWorldGenBuilding
     @Override
     protected boolean shouldGenerate(Random random,World world, int x, int y, int z)
     {
-        return world.provider.dimensionId == 0 && isFarEnoughFromOthers(world,x,z,MIN_DISTANCE_APART);
+        return (world.provider.dimensionId != -1 || world.provider.dimensionId != 1 || world.provider.dimensionId != -2) && isFarEnoughFromOthers(world,x,z,MIN_DISTANCE_APART);
     }
 
     @Override

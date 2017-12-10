@@ -77,7 +77,7 @@ public class MOAndroidHouseBuilding extends MOWorldGenBuilding
 
     @Override
     protected boolean shouldGenerate(Random random,World world, int x, int y, int z) {
-        return world.provider.dimensionId == 0;
+        return (world.provider.dimensionId == 0 || world.provider.dimensionId == 2);
     }
 
     @Override
